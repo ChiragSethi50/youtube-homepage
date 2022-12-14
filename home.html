@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube Clone</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside>
+        <div class="bars">
+          <img class="image" src="https://cdn-icons-png.flaticon.com/512/3502/3502458.png" alt="bars" />
+        </div>
+
+        <div class="side-icons">
+          <i>
+            <img class="image home" src="https://cdn-icons-png.flaticon.com/512/1946/1946436.png" alt="home" />
+          </i>
+          <p>Home</p>
+        </div>
+        <div class="side-icons">
+          <i>
+            <img class="image shorts" src="data:image/png;base64,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" alt="explore" />
+          </i>
+          <p>Shorts</p>
+        </div>
+        <div class="side-icons">
+          <i>
+            <img class="image sub" src="https://cdn-icons-png.flaticon.com/512/3669/3669513.png" alt="gallary" />
+          </i>
+          <p>Subscriptions</p>
+        </div>
+        <div class="side-icons">
+          <i>
+            <img class="image lib" src="https://cdn-icons-png.flaticon.com/512/3669/3669443.png" alt="library" />
+          </i>
+          <p>Library</p>
+        </div>
+      </aside>
+
+
+      <div class="main-container">
+        <header>
+          <nav>
+            <div class="logo">
+              <img class="image" src="https://www.gstatic.com/youtube/img/branding/youtubelogo/svg/youtubelogo.svg" alt="Youtube Logo" />
+            </div>
+            <div class="center-nav">
+              <div class="search">
+                <input type="text" placeholder="search" />
+                <button>
+                  <img class="image" id="search" src="https://cdn-icons-png.flaticon.com/512/5636/5636698.png" alt="search" />
+
+                  
+                </button>
+              </div>
+              <div class="mic">
+                <img class="image" src="https://cdn-icons-png.flaticon.com/512/709/709950.png" alt="mic" />
+              </div>
+            </div>
+            <div class="side-nav menu">
+              <i>
+                <img class="image create" src="https://cdn-icons-png.flaticon.com/512/4189/4189286.png" alt="video add" />
+              </i>
+        
+              <i>
+                <img class="image bell" src="https://cdn-icons-png.flaticon.com/512/3602/3602145.png" alt="bell" />
+              </i>
+              <i>
+                <img class="image id" src="http://unsplash.it/36/36?gravity=center" alt="avatar" />
+              </i>
+            </div>
+          </nav>
+        
+
+          <div class="buttons">
+        
+            <button class="button1 button">All</button>
+            <button class="button">HTML</button>
+            <button class="button">CSS</button>
+            <button class="button">Javascript</button>
+            <button class="button">C++</button>
+            <button class="button">Python</button>
+            <button class="button">Java</button>
+            
+        </div>
+
+        </header>
+
+
+
+        <main>
+          <div class="card-container">
+            <div class="card">
+              <img src="http://unsplash.it/250/150?gravity=center" alt="thumbnail" />
+              <div class="avatar-content">
+                <div class="avatar">
+                  <img src="http://unsplash.it/36/36?gravity=center" alt="avatar" />
+                </div>
+
+                <div class="content">
+                  <h3>Video Name</h3>
+                  <p class="channel-name">Channel name</p>
+                  <div class="content-status">
+                    <p>10Cr views</p>
+                    <p>10 days ago</p>
+                  </div>
+                </div>
+               
+              </div>
+            </div>
+            <div class="card">
+                <img src="http://unsplash.it/250/150?gravity=center" alt="thumbnail" />
+                <div class="avatar-content">
+                  <div class="avatar">
+                    <img src="http://unsplash.it/36/36?gravity=center" alt="avatar" />
+                  </div>
+  
+                  <div class="content">
+                    <h3>Video Name</h3>
+                    <p class="channel-name">Channel name</p>
+                    <div class="content-status">
+                      <p>10Cr views</p>
+                      <p>10 days ago</p>
+                    </div>
+                  </div>
+                 
+                </div>
+              </div>
+                <div class="card">
+                    <img src="http://unsplash.it/250/150?gravity=center" alt="thumbnail" />
+                    <div class="avatar-content">
+                      <div class="avatar">
+                        <img src="http://unsplash.it/36/36?gravity=center" alt="avatar" />
+                      </div>
+      
+                      <div class="content">
+                        <h3>Video Name</h3>
+                        <p class="channel-name">Channel name</p>
+                        <div class="content-status">
+                          <p>10Cr views</p>
+                          <p>10 days ago</p>
+                        </div>
+                      </div>
+                     
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="http://unsplash.it/250/150?gravity=center" alt="thumbnail" />
+                    <div class="avatar-content">
+                      <div class="avatar">
+                        <img src="http://unsplash.it/36/36?gravity=center" alt="avatar" />
+                      </div>
+      
+                      <div class="content">
+                        <h3>Video Name</h3>
+                        <p class="channel-name">Channel name</p>
+                        <div class="content-status">
+                          <p>10Cr views</p>
+                          <p>10 days ago</p>
+                        </div>
+                      </div>
+                     
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="http://unsplash.it/250/150?gravity=center" alt="thumbnail" />
+                    <div class="avatar-content">
+                      <div class="avatar">
+                        <img src="http://unsplash.it/36/36?gravity=center" alt="avatar" />
+                      </div>
+      
+                      <div class="content">
+                        <h3>Video Name</h3>
+                        <p class="channel-name">Channel name</p>
+                        <div class="content-status">
+                          <p>10Cr views</p>
+                          <p>10 days ago</p>
+                        </div>
+                      </div>
+                     
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="http://unsplash.it/250/150?gravity=center" alt="thumbnail" />
+                    <div class="avatar-content">
+                      <div class="avatar">
+                        <img src="http://unsplash.it/36/36?gravity=center" alt="avatar" />
+                      </div>
+      
+                      <div class="content">
+                        <h3>Video Name</h3>
+                        <p class="channel-name">Channel name</p>
+                        <div class="content-status">
+                          <p>10Cr views</p>
+                          <p>10 days ago</p>
+                        </div>
+                      </div>
+                     
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="http://unsplash.it/250/150?gravity=center" alt="thumbnail" />
+                    <div class="avatar-content">
+                      <div class="avatar">
+                        <img src="http://unsplash.it/36/36?gravity=center" alt="avatar" />
+                      </div>
+      
+                      <div class="content">
+                        <h3>Video Name</h3>
+                        <p class="channel-name">Channel name</p>
+                        <div class="content-status">
+                          <p>10Cr views</p>
+                          <p>10 days ago</p>
+                        </div>
+                      </div>
+                     
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="http://unsplash.it/250/150?gravity=center" alt="thumbnail" />
+                    <div class="avatar-content">
+                      <div class="avatar">
+                        <img src="http://unsplash.it/36/36?gravity=center" alt="avatar" />
+                      </div>
+      
+                      <div class="content">
+                        <h3>Video Name</h3>
+                        <p class="channel-name">Channel name</p>
+                        <div class="content-status">
+                          <p>10Cr views</p>
+                          <p>10 days ago</p>
+                        </div>
+                      </div>
+                     
+                    </div>
+                  </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
